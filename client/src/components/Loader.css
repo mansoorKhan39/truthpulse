@@ -1,0 +1,22 @@
+.loader-wrap {
+  min-height: 60vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 20px;
+}
+.loader-hex { position: relative; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; }
+.hex-ring {
+  position: absolute; inset: 0; border: 2px solid transparent;
+  border-top-color: var(--accent2); border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.hex-ring.r2 {
+  inset: 8px; border-top-color: var(--accent);
+  animation-duration: 0.7s; animation-direction: reverse;
+}
+.hex-icon { font-size: 22px; color: var(--accent2); }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loader-text { font-size: 12px; color: var(--text3); letter-spacing: 0.1em; }
+.dots { display: inline-block; animation: ellipsis 1.2s steps(4, end) infinite; }
+@keyframes ellipsis {
+  0%   { width: 0;    overflow: hidden; }
+  100% { width: 1.5em; }
+}

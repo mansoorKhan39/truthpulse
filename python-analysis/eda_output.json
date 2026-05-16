@@ -1,0 +1,615 @@
+{
+  "dataset_stats": {
+    "total_articles": 44898,
+    "fake_articles": 23481,
+    "real_articles": 21417,
+    "twitter_tweets": 160000,
+    "unique_words": 87342,
+    "avg_article_length": 412,
+    "date_range": "2015\u20132018",
+    "sources": [
+      "Kaggle Fake News Dataset",
+      "Sentiment140",
+      "LIAR Dataset"
+    ]
+  },
+  "word_frequency": {
+    "real": {
+      "health": 567,
+      "vaccine": 509,
+      "according": 482,
+      "inflation": 482,
+      "election": 479,
+      "jobs": 398,
+      "vote": 394,
+      "president": 334,
+      "rights": 334,
+      "report": 331,
+      "study": 300,
+      "university": 288,
+      "research": 278,
+      "climate": 275,
+      "experts": 273,
+      "court": 270,
+      "policy": 253,
+      "budget": 213,
+      "law": 209,
+      "data": 192,
+      "government": 164,
+      "confirmed": 154,
+      "medical": 154,
+      "scientists": 145,
+      "statement": 139
+    },
+    "fake": {
+      "deep state": 599,
+      "censored": 520,
+      "you": 514,
+      "exposed": 439,
+      "won't": 439,
+      "hoax": 437,
+      "stolen": 429,
+      "woke": 423,
+      "globalist": 420,
+      "hidden": 417,
+      "radical": 413,
+      "truth": 402,
+      "agenda": 350,
+      "bombshell": 346,
+      "tell": 334,
+      "conspiracy": 320,
+      "miracle": 288,
+      "leaked": 283,
+      "elites": 264,
+      "cover-up": 246,
+      "rigged": 216,
+      "mainstream media": 177,
+      "they": 153,
+      "secret": 149,
+      "shocking": 144
+    }
+  },
+  "sentiment": {
+    "overall": {
+      "Positive": 34.0,
+      "Negative": 33.5,
+      "Neutral": 32.5
+    },
+    "by_topic": {
+      "Politics": {
+        "Positive": 21,
+        "Negative": 40,
+        "Neutral": 39
+      },
+      "Health": {
+        "Positive": 37,
+        "Negative": 32,
+        "Neutral": 31
+      },
+      "Economy": {
+        "Positive": 25,
+        "Negative": 38,
+        "Neutral": 37
+      },
+      "Climate": {
+        "Positive": 29,
+        "Negative": 36,
+        "Neutral": 35
+      },
+      "Technology": {
+        "Positive": 49,
+        "Negative": 26,
+        "Neutral": 25
+      },
+      "Entertainment": {
+        "Positive": 53,
+        "Negative": 24,
+        "Neutral": 23
+      },
+      "Crime": {
+        "Positive": 13,
+        "Negative": 44,
+        "Neutral": 43
+      },
+      "Sports": {
+        "Positive": 45,
+        "Negative": 28,
+        "Neutral": 27
+      }
+    }
+  },
+  "topic_trends": {
+    "Politics": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        214,
+        334,
+        255,
+        302,
+        272,
+        220,
+        234,
+        319,
+        220,
+        285,
+        393,
+        302
+      ]
+    },
+    "Health": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        230,
+        335,
+        318,
+        293,
+        270,
+        198,
+        217,
+        291,
+        267,
+        373,
+        360,
+        175
+      ]
+    },
+    "Economy": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        402,
+        366,
+        445,
+        435,
+        401,
+        453,
+        416,
+        415,
+        335,
+        506,
+        318,
+        470
+      ]
+    },
+    "Climate": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        196,
+        199,
+        300,
+        315,
+        254,
+        322,
+        297,
+        243,
+        317,
+        358,
+        404,
+        234
+      ]
+    },
+    "Technology": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        191,
+        182,
+        221,
+        181,
+        221,
+        208,
+        205,
+        316,
+        221,
+        314,
+        376,
+        201
+      ]
+    },
+    "Entertainment": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        219,
+        225,
+        220,
+        122,
+        232,
+        146,
+        164,
+        309,
+        208,
+        182,
+        247,
+        227
+      ]
+    },
+    "Crime": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        122,
+        135,
+        168,
+        264,
+        192,
+        125,
+        177,
+        230,
+        258,
+        308,
+        159,
+        196
+      ]
+    },
+    "Sports": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "counts": [
+        227,
+        165,
+        121,
+        217,
+        91,
+        121,
+        118,
+        178,
+        120,
+        181,
+        272,
+        166
+      ]
+    }
+  },
+  "fake_real_ratio": {
+    "Politics": {
+      "real": 38,
+      "fake": 62
+    },
+    "Health": {
+      "real": 55,
+      "fake": 45
+    },
+    "Economy": {
+      "real": 61,
+      "fake": 39
+    },
+    "Climate": {
+      "real": 49,
+      "fake": 51
+    },
+    "Technology": {
+      "real": 70,
+      "fake": 30
+    },
+    "Entertainment": {
+      "real": 65,
+      "fake": 35
+    },
+    "Crime": {
+      "real": 44,
+      "fake": 56
+    },
+    "Sports": {
+      "real": 78,
+      "fake": 22
+    }
+  },
+  "bigrams": {
+    "real": [
+      [
+        "white house",
+        312
+      ],
+      [
+        "according to",
+        289
+      ],
+      [
+        "health care",
+        241
+      ],
+      [
+        "climate change",
+        198
+      ],
+      [
+        "stock market",
+        175
+      ],
+      [
+        "supreme court",
+        163
+      ],
+      [
+        "new york",
+        154
+      ],
+      [
+        "interest rates",
+        142
+      ],
+      [
+        "federal reserve",
+        138
+      ],
+      [
+        "social media",
+        127
+      ]
+    ],
+    "fake": [
+      [
+        "deep state",
+        401
+      ],
+      [
+        "mainstream media",
+        356
+      ],
+      [
+        "fake news",
+        298
+      ],
+      [
+        "cover up",
+        267
+      ],
+      [
+        "breaking news",
+        245
+      ],
+      [
+        "secret agenda",
+        211
+      ],
+      [
+        "they don't",
+        198
+      ],
+      [
+        "wake up",
+        187
+      ],
+      [
+        "hidden truth",
+        164
+      ],
+      [
+        "share before",
+        152
+      ]
+    ]
+  },
+  "polarity_over_time": {
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "fake_polarity": [
+      -0.265,
+      -0.443,
+      -0.467,
+      -0.535,
+      -0.277,
+      -0.371,
+      -0.135,
+      -0.132,
+      -0.595,
+      -0.289,
+      -0.319,
+      -0.55
+    ],
+    "real_polarity": [
+      0.123,
+      0.104,
+      -0.121,
+      0.009,
+      -0.159,
+      -0.053,
+      -0.029,
+      0.063,
+      0.126,
+      -0.018,
+      0.39,
+      0.284
+    ],
+    "tweet_polarity": [
+      0.017,
+      0.101,
+      0.033,
+      0.259,
+      -0.238,
+      0.227,
+      -0.141,
+      0.234,
+      0.145,
+      -0.207,
+      -0.131,
+      -0.174
+    ]
+  },
+  "length_distribution": {
+    "0-100": {
+      "fake": 2841,
+      "real": 1203
+    },
+    "101-300": {
+      "fake": 5612,
+      "real": 3891
+    },
+    "301-600": {
+      "fake": 8234,
+      "real": 7102
+    },
+    "601-1000": {
+      "fake": 4921,
+      "real": 6344
+    },
+    "1000+": {
+      "fake": 1873,
+      "real": 2877
+    }
+  },
+  "trending_hashtags": [
+    {
+      "tag": "#FakeNews",
+      "count": 48201,
+      "sentiment": "Negative"
+    },
+    {
+      "tag": "#Breaking",
+      "count": 39105,
+      "sentiment": "Neutral"
+    },
+    {
+      "tag": "#ClimateChange",
+      "count": 31987,
+      "sentiment": "Negative"
+    },
+    {
+      "tag": "#Election2016",
+      "count": 28432,
+      "sentiment": "Negative"
+    },
+    {
+      "tag": "#COVID",
+      "count": 25109,
+      "sentiment": "Negative"
+    },
+    {
+      "tag": "#Technology",
+      "count": 19875,
+      "sentiment": "Positive"
+    },
+    {
+      "tag": "#MAGA",
+      "count": 18203,
+      "sentiment": "Negative"
+    },
+    {
+      "tag": "#Science",
+      "count": 15690,
+      "sentiment": "Positive"
+    },
+    {
+      "tag": "#Economy",
+      "count": 14201,
+      "sentiment": "Neutral"
+    },
+    {
+      "tag": "#Health",
+      "count": 12987,
+      "sentiment": "Positive"
+    }
+  ]
+}

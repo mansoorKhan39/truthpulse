@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: truthpulse-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: truthpulse-api
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017/truthpulse
+    depends_on:
+      mongo:
+        condition: service_healthy
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: truthpulse-client
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+
+volumes:
+  mongo_data:

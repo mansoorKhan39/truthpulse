@@ -1,0 +1,14 @@
+.chart-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--r2); padding: 24px;
+  animation: fadeUp 0.5s ease both;
+  transition: border-color 0.25s;
+}
+.chart-card:hover { border-color: var(--border2); }
+.cc-header { margin-bottom: 20px; }
+.cc-title {
+  font-size: 15px; font-weight: 700; color: var(--text);
+  font-family: var(--font-head); letter-spacing: -0.01em;
+}
+.cc-sub { font-size: 11px; color: var(--text3); margin-top: 4px; }
+.cc-body { width: 100%; }
